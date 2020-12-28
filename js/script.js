@@ -1,15 +1,18 @@
 "use strict";
 $(document).ready(function () {
   // включаем слайдер, используя нужный класс, указанный в html
-  $('.gallery__slider').slick({
-  slidesToShow:3,
-    slidesToScroll:1,
-    infinite:true,//бесконечный слайдер
-  });
+  
   $('.hero-slider').slick({
   slidesToShow:1,
     slidesToScroll:1,
     infinite:true,//бесконечный слайдер
+  });
+
+  $('.news-slider').slick({
+  slidesToShow:3,
+    slidesToScroll:1,
+    infinite:true,//бесконечный слайдер
+
   });
   
 });
@@ -19,14 +22,10 @@ $('.menu__burger').click(function (event) {
    
 
 });
-
 //карта
-
 function initMap() {}
-
 initMap = function() {
   const myLatLng = { lat: 50.50827190529146,  lng: 30.498301659794745 };
-
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
     center: myLatLng,
