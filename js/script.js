@@ -1,7 +1,7 @@
 "use strict";
 $(document).ready(function () {
   // включаем слайдер, используя нужный класс, указанный в html
-  
+
   $('.hero-slider').slick({
   slidesToShow:1,
     slidesToScroll:1,
@@ -12,6 +12,8 @@ $(document).ready(function () {
   slidesToShow:3,
     slidesToScroll:1,
     infinite:true,//бесконечный слайдер
+    dots: true,//включаю точки
+    
 
   });
   
